@@ -1,0 +1,40 @@
+﻿@model List<eBoxOffice.Domain.Domain_models.Movie>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Movies</h1>
+
+<p>
+    <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
+</p>
+
+
+@for (int i = 0; i < Model.Count; i++)
+{
+    var item = Model[i];
+
+    if (i % 3 == 0)
+    {
+        @:<div class="row">
+        }
+
+                  <div class="card m-2" style="width: 18rem;">
+                      <img class="card-img-top" src="@item.MovieImage" alt="Card image cap">
+                      <div class="card-body">
+                          <h3 class="card-title">@item.MovieName</h3>
+                          <p class="card-text">@item.Category</p>
+                          <p class="card-text" lines>@item.Description</p>
+
+                          <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary">Edit</a>
+                          <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a>
+                      </div>
+                  </div>
+
+        if (i % 3 == 2)
+        {
+        @:</div>
+    }
+}
+

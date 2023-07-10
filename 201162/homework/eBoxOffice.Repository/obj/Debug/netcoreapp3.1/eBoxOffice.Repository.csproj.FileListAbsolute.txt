@@ -1,0 +1,13 @@
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\bin\Debug\netcoreapp3.1\eBoxOffice.Repository.deps.json
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\bin\Debug\netcoreapp3.1\eBoxOffice.Repository.dll
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\bin\Debug\netcoreapp3.1\eBoxOffice.Repository.pdb
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\bin\Debug\netcoreapp3.1\eBoxOffice.Domain.dll
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\bin\Debug\netcoreapp3.1\eBoxOffice.Domain.pdb
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.csproj.AssemblyReference.cache
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.AssemblyInfoInputs.cache
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.AssemblyInfo.cs
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.csproj.CoreCompileInputs.cache
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.csproj.CopyComplete
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.dll
+C:\Users\milos\source\repos\homework\eBoxOffice.Repository\obj\Debug\netcoreapp3.1\eBoxOffice.Repository.pdb

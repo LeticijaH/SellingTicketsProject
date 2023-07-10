@@ -1,0 +1,49 @@
+﻿@model List<eBoxOfficeAdminApp.Models.Ticket>
+
+    @{
+    ViewData["Title"] = "Index";
+    }
+
+
+    <div class="row">
+      
+
+        <div class="col-md-3">
+            <form class="form" method="POST" enctype="multipart/form-data" asp-controller="Ticket" asp-action="ExportAllTickets">
+                <div class="form-group">
+                    <select name="category" class="form-control" asp-items="ViewBag.Category"></select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-danger">Export Tickets</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+    var item = Model[i];
+
+    if (i % 3 == 0)
+    {
+    @:<div class="row">
+        }
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="card-img-top" src="@item.Movie.MovieImage" style="width:18rem;" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-subtitle">@item.Movie.MovieName</h4>
+                <h6 class="card-subtitle m-1">@item.DateTime.ToString("dddd, dd MMMM yyyy")</h6>
+                <p class="card-text">Price: $@item.TicketPrice</p>
+            </div>
+        </div>
+
+
+        if (i % 3 == 2)
+        {
+        @:</div>
+    }
+    }
+

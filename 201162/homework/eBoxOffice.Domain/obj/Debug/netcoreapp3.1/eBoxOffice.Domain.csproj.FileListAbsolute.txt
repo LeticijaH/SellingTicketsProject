@@ -1,0 +1,10 @@
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\bin\Debug\netcoreapp3.1\eBoxOffice.Domain.deps.json
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\bin\Debug\netcoreapp3.1\eBoxOffice.Domain.dll
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\bin\Debug\netcoreapp3.1\eBoxOffice.Domain.pdb
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.csproj.AssemblyReference.cache
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.AssemblyInfoInputs.cache
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.AssemblyInfo.cs
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.csproj.CoreCompileInputs.cache
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.dll
+C:\Users\milos\source\repos\homework\eBoxOffice.Domain\obj\Debug\netcoreapp3.1\eBoxOffice.Domain.pdb

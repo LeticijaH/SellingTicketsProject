@@ -1,0 +1,39 @@
+﻿@model eBoxOffice.Domain.Domain_models.Order
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="container">
+
+   
+    @for (int i = 0; i < Model.TicketsInOrder.ToList().Count; i++)
+    {
+        var ticketsInOrder = Model.TicketsInOrder.ToList();
+        var item = ticketsInOrder[i];
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+            <div class="card m-2" style="width: 22rem;">
+
+                <div class="card-body">
+
+                    <h3 class="card-subtitle">@item.Ticket.DateTime</h3>
+                    <p class="card-text">@item.Ticket.TicketPrice</p>
+                    <p class="card-text">@item.Quantity</p>
+                </div>
+            </div>
+
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+</div>

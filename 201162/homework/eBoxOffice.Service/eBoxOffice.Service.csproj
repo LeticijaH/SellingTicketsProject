@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eBoxOffice.Domain\eBoxOffice.Domain.csproj" />
+    <ProjectReference Include="..\eBoxOffice.Repository\eBoxOffice.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

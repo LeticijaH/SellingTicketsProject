@@ -1,0 +1,81 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<eBoxOffice.Domain.StripeSettings> Stripe
+
+@model eBoxOffice.Domain.dto.ShoppingCartDto
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Shopping cart</h1>
+
+@if (Model.TicketsInShoppingCarts.Count == 0)
+{
+    <h1>No items in shopping cart</h1>
+} else {
+
+    <div class="row">
+        <form method="post" asp-controller="ShoppingCart" asp-action="PayNow">
+            <div class="form-group">
+                <article>
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="@Stripe.Value.PublishableKey"
+                            data-amount="@(Model.TotalPrice*100)"
+                            data-label="Pay $@Model.TotalPrice"
+                            data-description="eBoxOffice Payment"
+                            data-locale="auto"   
+                            >
+                    </script>
+                </article>
+            </div>
+       
+         </form>
+    </div>
+
+    
+
+<table class="table">
+
+    <thead>
+        <th class="col-md-1">#</th>
+        <th class="col-md-1">Movie Name</th>
+        <th class="col">Date and Time</th>
+        <th class="col">Quantity</th>
+        <th class="col">Price</th>
+        <th class="col"></th>
+    </thead>
+
+    <tbody>
+        @{
+            var i = 1;
+            foreach (var item in Model.TicketsInShoppingCarts)
+            {
+                <tr>
+                    <td>@(i++)</td>
+                    <td>@item.Ticket.Id</td>
+                    <td>@item.Ticket.DateTime</td>
+                    <td>@item.Quantity</td>
+                    <td>$@item.Ticket.TicketPrice</td>
+                    <td>
+                        <a class="btn btn-danger" href="/ShoppingCart/DeleteFromShoppingCart/@item.Ticket.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>Total:</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>$@Model.TotalPrice</th>
+        </tr>
+    </tfoot>
+
+</table>
+}
